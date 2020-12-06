@@ -1,0 +1,11 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')   
+    script(src='https://cdn.socket.io/socket.io-3.0.1.min.js')    
+    script(src="/javascripts/chat.js")
+  body
+    h1 title #{title}
+    ul
+    each val in users
+    li= val.name

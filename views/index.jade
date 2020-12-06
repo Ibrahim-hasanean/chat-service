@@ -1,0 +1,15 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')    
+    script(src="/javascripts/index.js")
+  body
+    form(name="add-estimation", method="post",actions="/index")
+        div.input            
+            input(type="email", name="email",placeholder="email")
+        div.input            
+            input(type="text", name="name",placeholder="name")
+        div.input            
+            input(type="password", name="password",placeholder="password")
+        div.actions
+            input(type="submit", value="login")
